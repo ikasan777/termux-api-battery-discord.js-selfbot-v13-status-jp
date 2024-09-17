@@ -54,7 +54,7 @@ node プロジェクト名.js
    を実行するにゃ。
 
 ## termux-apiをインストールするときの注意点にゃ
-1. [f-droid](https://f-droid.org/ja/)をインストールするにゃ。
+1. [f-droid](https://f-droid.org/ja/)をインストールするにゃ。(google playからインストールするとapiが使えないにゃ)
 2. f-droidからtermuxとtermux-apiをインストールするにゃ。
 3. そのあとtermuxを実行し```pkg install nodejs``` でnode.jsをインストールするにゃ。
 4. ```npm install termux-api```でapiをインストールできるにゃ。
