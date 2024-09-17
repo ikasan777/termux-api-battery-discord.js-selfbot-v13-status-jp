@@ -1,69 +1,68 @@
-### termux-api-battery-discord.js-selfbot-v13-status
-# termux apiを使ったバッテリーとメモリ情報の取得
+# バッテリーとメモリ情報取得ツール for Termux
+このプロジェクトは、discord.js-selfbot-v13を使ってDiscordのユーザーステータスを自動的に更新するbotだにゃ。バッテリー残量、メモリ使用量、Spotify再生情報(カスタム可能)などを表示するにゃ。
 
-このプロジェクトは、discord.js-selfbot-v13を使用してDiscordのユーザーステータスを自動的に更新するbotです。バッテリー残量、メモリ使用量、Spotify再生情報(カスタム可能)などを表示します。
-またこのコードはTermuxのみで実行可能となります
+このコードはTermuxでしか動かないから注意するにゃ！
 
 ## 機能
 
-- バッテリー残量と充電状態の表示(androidのみ)
-- メモリ使用量の表示(androidのみ)
-- カスタムRichPresenceの設定
-- SpotifyRPCの模倣
+- バッテリー残量と充電状態の表示(androidのみにゃ)
+- メモリ使用量の表示(androidのみにゃ)
+- カスタムRichPresenceの設定にゃ
+- Spotifyステータスをいじいじするにゃ
 
-## 必要なモジュール
+## 必要なモジュールはこれにゃ！
 
 - discord.js-selfbot-v13
 - util
 - child_process
 - os
+- termux-api
 
-## インストール方法
+## インストール方法にゃ
 
-1. 必要なパッケージをインストールします:
+1. 必要なパッケージをインストールするにゃ:
 
 ```bash
 npm install discord.js-selfbot-v13 termux-api
 ```
 
-## 使用方法
+## 使い方にゃ
 
-1. `client.login('token')`の`'token'`を自分のDiscordアカウントのトークンに置き換えます。
-2. 以下のコマンドでself botを起動します:
+1. `client.login('token')`の`'token'`を自分のDiscordアカウントのトークンに置き換えるにゃ。
+2. 以下のコマンドでself botを起動するにゃ:
 
 ```bash
 node プロジェクト名.js
 ```
 
-## カスタマイズ
+## カスタマイズにゃ
 
-- RichPresenceの`setApplicationId`、`setURL`、`setAssetsLargeImage`などを適宜変更してください。
-- SpotifyRPCの各種IDやテキストを好みに合わせて変更できます。
-- カスタムステータスのテキストや絵文字を変更できます。
+- RichPresenceの`setApplicationId`、`setURL`、`setAssetsLargeImage`などを好きなように変更するにゃ。
+- SpotifyRPCの各種IDやテキストも好みに合わせて変更できるにゃ。
+- カスタムステータスのテキストや絵文字も変更できるにゃ。
 
-## エラー対処法
+## エラー対処法にゃ
 
 1. `termux-battery-status`コマンドが見つからない場合:
-   - Termuxを使用していない環境では、このコマンドは機能しません。代替の方法でバッテリー情報を取得するか、この機能を無効にしてください。
+   - Termuxを使用していない環境では、このコマンドは機能しないにゃ。代わりの方法でバッテリー情報を取得するか、この機能を無効にするにゃ。
 
-2. tokenが無効の場合:
-   - Discordアカウントのトークンが正しいことを確認してください。
+2. tokenが無効な場合:
+   - Discordアカウントのトークンが正しいか確認するにゃ。
 
 3. モジュールが見つからないエラー:
-   - ```
-   npm install discord.js-selfbot-v13 termux-api
-   ```
-   を実行してください
+   - ```npm install discord.js-selfbot-v13 termux-api```
+   を実行するにゃ。
 
-## termux-apiをインストールするときの注意点
-1. [f-droid](https://f-droid.org/ja/)をインストールしてください
-2. f-droidからtermuxとtermux-apiをインストールしてください
-3. そのあとtermuxを実行し```pkg install nodejs``` でnode.jsをインストールしてください
-4. ```npm install termux-api```でapiをインストールできます
-## 注意事項
+## termux-apiをインストールするときの注意点にゃ
+1. [f-droid](https://f-droid.org/ja/)をインストールするにゃ。
+2. f-droidからtermuxとtermux-apiをインストールするにゃ。
+3. そのあとtermuxを実行し```pkg install nodejs``` でnode.jsをインストールするにゃ。
+4. ```npm install termux-api```でapiをインストールできるにゃ。
 
-このボットはユーザーアカウントで動作するため、Discordの利用規約に違反する可能性があります。使用する際はリスクを理解した上で行ってください。
+## 注意事項にゃ
 
-## ライセンス
+このボットはユーザーアカウントで動作するから、Discordの利用規約に違反する可能性があるにゃ。使用する際はリスクを理解した上で行うにゃ。
 
-ライセンスは知らないですなんですかそれ
+## ライセンスにゃ
+
+ライセンスは知らないにゃ。なんですかそれにゃ？
